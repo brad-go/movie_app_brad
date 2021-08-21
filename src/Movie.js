@@ -16,7 +16,8 @@ function Movie({ year, rating, title, summary, poster, genres }) {
           </li>
         ))}
       </ul>
-      <p className="movie__summary">{summary}</p>
+      {/* slice를 이용해서 전체 movie들의 summary의 길이를 비슷하게 */}
+      <p className="movie__summary">{summary.slice(0, 150)}</p>
       <h5 className="movie__rating">Rating: {rating}</h5>
     </div>
   </div>
