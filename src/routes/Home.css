@@ -1,0 +1,54 @@
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader__text {
+  font-size: 5vh;
+  font-weight: 300;
+  color: gray;
+}
+
+/* Link 설정시 깨지는 css를 고치기 위해 html에서 a태그가 되는 Link의 display를 contents로 만들고 link의 밑줄을 없앤다.  */
+.movies a {
+  display: contents;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .movies {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, max-content));
+    gap: 10vh 8vw;
+    padding: 10vh 1vw;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .movies {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10vh;
+    padding: 10vh 1vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .movies {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, max-content));
+    gap: 5vh;
+    padding: 10vh 1vw;
+  }
+}

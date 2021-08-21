@@ -46,6 +46,10 @@ h5 {
   margin: 10px 0;
 }
 
+.movie p {
+  font-size: 0.8em;
+}
+
 .genres {
   list-style: none;
   padding: 0;
@@ -60,5 +64,5 @@ h5 {
 }
 
 .genre {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
